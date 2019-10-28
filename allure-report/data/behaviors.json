@@ -1,0 +1,17 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Get Skiing",
+    "uid" : "e9a1b353b1f19ae9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1556722313450,
+      "stop" : 1556722332730,
+      "duration" : 19280
+    },
+    "flaky" : false,
+    "parameters" : [ "chrome" ]
+  } ]
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "country": "France"
+    },
+    {
+        "country": "Canada"
+    },
+    {
+        "country": "Austria"
+    },
+    {
+        "country": "Italy",
+        "resort": "Selva"
+    },
+    {
+        "country": "Italy",
+        "resort": "Champoluc"
+    }
+]

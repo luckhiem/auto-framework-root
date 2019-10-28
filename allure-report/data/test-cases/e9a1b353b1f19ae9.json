@@ -1,0 +1,57 @@
+{
+  "uid" : "e9a1b353b1f19ae9",
+  "name" : "Get Skiing",
+  "fullName" : "Get Skiing.Get Skiing",
+  "historyId" : "8079fe9f7a83dc5e14198326ef6e4745",
+  "time" : {
+    "start" : 1556722313450,
+    "stop" : 1556722332730,
+    "duration" : 19280
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Get Skiing"
+  }, {
+    "name" : "testClass",
+    "value" : "Get Skiing"
+  }, {
+    "name" : "testMethod",
+    "value" : "Get Skiing"
+  }, {
+    "name" : "package",
+    "value" : "Get Skiing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e9a1b353b1f19ae9.json",
+  "parameterValues" : [ "chrome" ]
+}

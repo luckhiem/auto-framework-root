@@ -1,0 +1,500 @@
+2019-05-01T14:55:08.695Z INFO @wdio/local-runner: Run worker command: run
+2019-05-01T14:55:08.819Z DEBUG @wdio/local-runner:utils: init remote session
+2019-05-01T14:55:08.857Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session
+2019-05-01T14:55:08.858Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { deviceName: 'iPhone X',
+        automationName: 'XCUITest',
+        bundleId: 'com.apple.MobileSMS',
+        platformName: 'iOS',
+        platformVersion: '12.2' },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { deviceName: 'iPhone X',
+     automationName: 'XCUITest',
+     bundleId: 'com.apple.MobileSMS',
+     platformName: 'iOS',
+     platformVersion: '12.2' } }
+2019-05-01T14:55:19.802Z INFO webdriver: COMMAND findElement("accessibility id", "Kate Bell")
+2019-05-01T14:55:19.804Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/element
+2019-05-01T14:55:19.804Z INFO webdriver: DATA { using: 'accessibility id', value: 'Kate Bell' }
+2019-05-01T14:55:20.025Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '24000000-0000-0000-A3CF-000000000000',
+  ELEMENT: '24000000-0000-0000-A3CF-000000000000' }
+2019-05-01T14:55:20.075Z INFO webdriver: COMMAND elementClick("24000000-0000-0000-A3CF-000000000000")
+2019-05-01T14:55:20.076Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/element/24000000-0000-0000-A3CF-000000000000/click
+2019-05-01T14:55:20.650Z INFO webdriver: RESULT 
+2019-05-01T14:55:20.669Z INFO webdriver: COMMAND getLogTypes()
+2019-05-01T14:55:20.670Z INFO webdriver: [GET] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log/types
+2019-05-01T14:55:20.695Z INFO webdriver: RESULT [ 'syslog',
+  'crashlog',
+  'performance',
+  'server',
+  'safariConsole',
+  'safariNetwork' ]
+2019-05-01T14:55:20.695Z DEBUG @wdio/runner: Fetching logs for syslog, crashlog, performance, server, safariConsole, safariNetwork
+2019-05-01T14:55:20.696Z INFO webdriver: COMMAND getLogs("syslog")
+2019-05-01T14:55:20.696Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:20.697Z INFO webdriver: DATA { type: 'syslog' }
+2019-05-01T14:55:20.697Z INFO webdriver: COMMAND getLogs("crashlog")
+2019-05-01T14:55:20.698Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:20.698Z INFO webdriver: DATA { type: 'crashlog' }
+2019-05-01T14:55:20.699Z INFO webdriver: COMMAND getLogs("performance")
+2019-05-01T14:55:20.700Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:20.700Z INFO webdriver: DATA { type: 'performance' }
+2019-05-01T14:55:20.701Z INFO webdriver: COMMAND getLogs("server")
+2019-05-01T14:55:20.701Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:20.701Z INFO webdriver: DATA { type: 'server' }
+2019-05-01T14:55:20.701Z INFO webdriver: COMMAND getLogs("safariConsole")
+2019-05-01T14:55:20.702Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:20.702Z INFO webdriver: DATA { type: 'safariConsole' }
+2019-05-01T14:55:20.702Z INFO webdriver: COMMAND getLogs("safariNetwork")
+2019-05-01T14:55:20.703Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:20.703Z INFO webdriver: DATA { type: 'safariNetwork' }
+2019-05-01T14:55:20.757Z INFO webdriver: RESULT [ { timestamp: 1556722512610,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:12.609 Df CoreSimulatorBridge[52954:60964] Pasteboard change listener callback port <NSMachPort: 0x7fe7e3c0ed90> registered' },
+  { timestamp: 1556722513087,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.086 Df CoreSimulatorBridge[52954:608e1] Pasteboard change listener callback port <NSMachPort: 0x7fe7e3f08ad0> registered' },
+  { timestamp: 1556722513246,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.244 Df locationd[52951:6087e] [com.apple.locationd.Position:GeneralCLX] @ClxSimulated, Fix, 1, ll, 37.7858340, -122.4064170, acc, 5.00, course, -1.0, time, 578415315.9' },
+  { timestamp: 1556722513246,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.244 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722513246,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.245 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722513246,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.245 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722513246,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.245 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722513247,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.245 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722513247,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.245 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722513406,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.405 Df testmanagerd[53069:60f3a] [com.apple.dt.testmanagerd:Default] Launching com.apple.MobileSMS' },
+  { timestamp: 1556722513406,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.405 Df testmanagerd[53069:6128a] [com.apple.FrontBoard:Common] [FBSSystemService][0xeb49] Sending request to open "com.apple.MobileSMS"' },
+  { timestamp: 1556722513408,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.407 Df SpringBoard[52946:6112c] [com.apple.FrontBoard:Common] [FBSystemService][0xeb49] Received request to open "com.apple.MobileSMS" from testmanagerd:53069.' },
+  { timestamp: 1556722513408,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.407 Df SpringBoard[52946:60885] [com.apple.FrontBoard:Common] [FBSystemService] Trusting entitled client testmanagerd:53069.' },
+  { timestamp: 1556722513409,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.407 Df SpringBoard[52946:60885] [com.apple.FrontBoard.workspace:Common] Received trusted open application request for "com.apple.MobileSMS" from <FBProcess: 0x60000373abe0; testmanagerd; pid: 53069>.' },
+  { timestamp: 1556722513409,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.407 Df SpringBoard[52946:60885] [com.apple.SpringBoard:IdleTimer] SBIdleTimerGlobalCoordinator - updateIdleTimerForReason:"IdleTimerReset"]' },
+  { timestamp: 1556722513411,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.409 Df SpringBoard[52946:60885] [com.apple.SpringBoard:Common] Executing request: <SBMainWorkspaceTransitionRequest: 0x60000abe2c00; eventLabel: OpenApplication(com.apple.MobileSMS)ForRequester(testmanagerd.53069); display: Main; source: FBSystemService>' },
+  { timestamp: 1556722513412,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.410 Df SpringBoard[52946:60885] [com.apple.FrontBoard.workspace:Transaction] Running <SBAppToAppWorkspaceTransaction: 0x7fed9e6e6ad0> for transition request:' },
+  { timestamp: 1556722513412,
+    level: 'ALL',
+    message:
+     '<SBMainWorkspaceTransitionRequest: 0x60000abe2c00; eventLabel: OpenApplication(com.apple.MobileSMS)ForRequester(testmanagerd.53069); display: Main; source: FBSystemService> {' },
+  { timestamp: 1556722513412,
+    level: 'ALL',
+    message:
+     '    applicationContext = <SBWorkspaceApplicationSceneTransitionContext: 0x600003228c60; background: NO> entities = {' },
+  { timestamp: 1556722513412,
+    level: 'ALL',
+    message:
+     '        SBLayoutRolePrimary = <SBDeviceApplicationSceneEntity: 0x6000026961c0; ID: com.apple.MobileSMS; layoutRole: primary>;' },
+  { timestamp: 1556722513412, level: 'ALL', message: '    };' },
+  { timestamp: 1556722513412, level: 'ALL', message: '}' },
+  { timestamp: 1556722513418,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.416 Df SpringBoard[52946:61122] [com.apple.FrontBoard:Common] Bootstrapping com.apple.MobileSMS with intent foreground-interactive' },
+  { timestamp: 1556722513419,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.417 Df assertiond[52952:61152] [com.apple.assertiond:process_info] Submitting new job for "com.apple.MobileSMS" on behalf of <BKProcess: 0x7f96d0e083d0; SpringBoard; com.apple.springboard; pid: 52946; agency: SystemShell; visibility: foreground; task: running>' },
+  { timestamp: 1556722513420,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.420 Df assertiond[52952:61152] Submitted job with label: UIKitApplication:com.apple.MobileSMS[0x1039][52952]' },
+  { timestamp: 1556722513488,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.487 Df assertiond[52952:61152] _FGJetsamPriorityBand is 10 for MobileSMS:53155' },
+  { timestamp: 1556722513488,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.487 E  assertiond[52952:61152] [com.apple.assertiond:workspace] SyscallError: memorystatus_control(MEMORYSTATUS_CMD_GET_MEMLIMIT_PROPERTIES, 53155) failed: using 0/1, 0/1' },
+  { timestamp: 1556722513489,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.487 E  assertiond[52952:61152] [com.apple.assertiond:process_info] SyscallError: MEMORYSTATUS_CMD_SET_PROCESS_IS_MANAGED failed for MobileSMS:53155' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.489 Df SpringBoard[52946:61122] [com.apple.assertiond:process_info] [com.apple.MobileSMS] Bootstrap complete with label: UIKitApplication:com.apple.MobileSMS[0x1039][52952]' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.487 Df assertiond[52952:61166] [com.apple.assertiond:process_info] [MobileSMS:53155] Setting jetsam priority to 0 [0]' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.490 A  locationd[52951:6087e] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.488 Df assertiond[52952:61166] [com.apple.assertiond:process_info] [MobileSMS:53155] Adding client: <BKProcessInfoServerClient: 0x7f96d0d06b60; pid: 52946>' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.489 Df SpringBoard[52946:61122] [com.apple.FrontBoard:ProcessManager] Adding: <FBApplicationProcess: 0x7fed9e445d30; MobileSMS (com.apple.MobileSMS); pid: 53155>' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.488 Df assertiond[52952:61166] [com.apple.assertiond:process_info] [MobileSMS:53155] Setting jetsam priority to 10 [0x10000]' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.488 Df assertiond[52952:61166] CPUMON: Ignoring System App 53155' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.488 Df assertiond[52952:61166] [com.apple.assertiond:process_info] [MobileSMS:53155] setpriority(PRIO_DARWIN_ROLE, 53155, 1): ok' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.489 Df assertiond[52952:61152] [com.apple.assertiond:process_info] Now tracking process <BKProcess: 0x7f96d0f17160; MobileSMS; com.apple.MobileSMS; pid: 53155; agency: SystemApp; visibility: none; task: running; hostpid: 52946> with host <BKProcess: 0x7f96d0e083d0; SpringBoard; com.apple.springboard; pid: 52946; agency: SystemShell; visibility: foreground; task: running>' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.492 Df testmanagerd[53069:61313] [com.apple.FrontBoard:Common] [FBSSystemService][0xeb49] Request successful: <BSProcessHandle: 0x7fac31e05da0; MobileSMS:53155; valid: YES>' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.490 Df assertiond[52952:61152] [com.apple.assertiond:process_assertion] [SpringBoard:52946] Attempting to acquire assertion for MobileSMS:53155: <BKProcessAssertion: 0x7f96d0e239e0; "UIApplicationLaunch" (activation:inf); id:…F65EE35A408C>' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.491 Df assertiond[52952:61152] [com.apple.assertiond:process_assertion] [MobileSMS:53155] Add assertion: <BKProcessAssertion: 0x7f96d0e239e0; id: 52946-CF9AA491-48A0-4BBF-B31B-F65EE35A408C; name: UIApplicationLaunch; state: active; reason: activation; duration: infs> {' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '    owner = <BSProcessHandle: 0x7f96d0f03cf0; SpringBoard:52946; valid: YES>;' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '    flags = preventSuspend, preventThrottleDownUI, preventThrottleDownCPU, wantsForegroundResourcePriority, preventSuspendOnSleep;' },
+  { timestamp: 1556722513504, level: 'ALL', message: '}' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.490 Df SpringBoard[52946:60885] [com.apple.FrontBoard:Common] [FBSystemService][0xeb49] Request complete; no error reported.' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.491 Df assertiond[52952:61152] [com.apple.assertiond:process_assertion] [MobileSMS:53155] Activate assertion: <BKProcessAssertion: 0x7f96d0e239e0; "UIApplicationLaunch" (activation:inf); id:…F65EE35A408C>' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.491 Df assertiond[52952:61152] [com.apple.assertiond:process_assertion] [MobileSMS:53155] New process assertion state; preventSuspend, preventThrottleDownUI, preventThrottleDownCPU, wantsForegroundResourcePriority, preventSuspendOnSleep (assertion 0x7f96d0e239e0 added: preventSuspend, preventThrottleDownUI, preventThrottleDownCPU, wantsForegroundResourcePriority, preventSuspendOnSleep; removed: (none))' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.492 Df assertiond[52952:61152] [com.apple.assertiond:process_info] [MobileSMS:53155] Setting jetsam priority to 10 [0x10100]' },
+  { timestamp: 1556722513504,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.496 Df SpringBoard[52946:60885] [com.apple.FrontBoard.workspace:SceneDeactivation] Added: <FBUIApplicationSceneDeactivationAssertion: 0x600000b474e0; reason: systemAnimation; all scene levels; hasPredicate: NO>' },
+  { timestamp: 1556722513518,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.505 Df backboardd[52949:6097a] [com.apple.BackBoard:Backlight] Setting minimum brightness level:0 with fade duration 0.4' },
+  { timestamp: 1556722513518,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.506 Df backboardd[52949:6097a] [com.apple.BackBoard:Backlight] setting CoreBrightness property:DisplayBrightnessFadePeriod to value:0.4' },
+  { timestamp: 1556722513518,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.506 Df backboardd[52949:6097a] [com.apple.BackBoard:Backlight] setting CoreBrightness property:BrightnessMinPhysicalWithFade to value:0' },
+  { timestamp: 1556722513518,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.506 Df backboardd[52949:6097a] [com.apple.BackBoard:TouchEvents] soft cancel on display:<main>' },
+  { timestamp: 1556722513518,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.507 Df SpringBoard[52946:60885] [com.apple.BackBoard:OrientationGlobal] Deactivating wallpaper orientation source ActiveOrientation' },
+  { timestamp: 1556722513518,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.508 Df SpringBoard[52946:60885] [com.apple.FrontBoard.workspace:SceneDeactivation] Added: <FBUIApplicationSceneDeactivationAssertion: 0x600000a41380; reason: systemAnimation; all scene levels; hasPredicate: NO>' },
+  { timestamp: 1556722513520,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.512 Df SpringBoard[52946:60885] [com.apple.FrontBoard.workspace:SceneDeactivation] [com.apple.MobileSMS] Setting deactivation reasons to: \'systemAnimation\' for reason: scene settings update - settings are eligible for deactivation reasons.' },
+  { timestamp: 1556722513520,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.518 Df SpringBoard[52946:60885] [com.apple.BackBoard:OrientationGlobal] Disabling home screen icon rotation for reason: SBAppToAppWorkspaceTransaction' },
+  { timestamp: 1556722513524,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.521 A  SpringBoard[52946:60885] [switcher snapshot cache] cache update requested' },
+  { timestamp: 1556722513524,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.521 A  SpringBoard[52946:60885] [switcher snapshot cache] update App Layout priority list' },
+  { timestamp: 1556722513524,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.521 A  SpringBoard[52946:60885] [switcher snapshot cache] cache disabled, priority are now default App Layouts' },
+  { timestamp: 1556722513524,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.521 A  SpringBoard[52946:60885] [switcher snapshot cache] purge full size snapshots' },
+  { timestamp: 1556722513524,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.521 A  SpringBoard[52946:60885] [switcher snapshot cache] purge full size snapshot requests' },
+  { timestamp: 1556722513524,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.521 A  SpringBoard[52946:60885] [switcher snapshot cache] purge low priority snapshots' },
+  { timestamp: 1556722513524,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.521 A  SpringBoard[52946:60885] [switcher snapshot cache] purge low priority snapshot requests' },
+  { timestamp: 1556722513524,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.522 A  SpringBoard[52946:60885] [switcher snapshot cache] enqueue snapshot request load if necessary' },
+  { timestamp: 1556722513529,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.526 A  SpringBoard[52946:60885] [switcher snapshot cache] cache update requested' },
+  { timestamp: 1556722513529,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.526 A  SpringBoard[52946:60885] [switcher snapshot cache] update App Layout priority list' },
+  { timestamp: 1556722513529,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.526 A  SpringBoard[52946:60885] [switcher snapshot cache] cache disabled, priority are now default App Layouts' },
+  { timestamp: 1556722513529,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.526 A  SpringBoard[52946:60885] [switcher snapshot cache] purge full size snapshots' },
+  { timestamp: 1556722513529,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.526 A  SpringBoard[52946:60885] [switcher snapshot cache] purge full size snapshot requests' },
+  { timestamp: 1556722513529,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.526 A  SpringBoard[52946:60885] [switcher snapshot cache] purge low priority snapshots' },
+  { timestamp: 1556722513529,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.526 A  SpringBoard[52946:60885] [switcher snapshot cache] purge low priority snapshot requests' },
+  { timestamp: 1556722513529,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.526 A  SpringBoard[52946:60885] [switcher snapshot cache] enqueue snapshot request load if necessary' },
+  { timestamp: 1556722513534,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.530 A  SpringBoard[52946:60885] [switcher snapshot cache] cache update requested' },
+  { timestamp: 1556722513534,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.530 A  SpringBoard[52946:60885] [switcher snapshot cache] update App Layout priority list' },
+  { timestamp: 1556722513534,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.530 A  SpringBoard[52946:60885] [switcher snapshot cache] cache disabled, priority are now default App Layouts' },
+  { timestamp: 1556722513534,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.530 A  SpringBoard[52946:60885] [switcher snapshot cache] purge full size snapshots' },
+  { timestamp: 1556722513534,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.531 Df assertiond[52952:61166] [com.apple.assertiond:process_info] Created BKApplicationStateServerClient for [52937:mediaremoted] -> <BKApplicationStateServerClient: 0x7f96d0c1b520; pid: 52937; states: all; assertions: none>' },
+  { timestamp: 1556722513534,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.530 A  SpringBoard[52946:60885] [switcher snapshot cache] purge full size snapshot requests' },
+  { timestamp: 1556722513534,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.530 A  SpringBoard[52946:60885] [switcher snapshot cache] purge low priority snapshots' },
+  { timestamp: 1556722513534,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.530 A  SpringBoard[52946:60885] [switcher snapshot cache] purge low priority snapshot requests' },
+  { timestamp: 1556722513534,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.530 A  SpringBoard[52946:60885] [switcher snapshot cache] enqueue snapshot request load if necessary' },
+  { timestamp: 1556722513537,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.536 Df SpringBoard[52946:60885] [com.apple.SpringBoard:StatusBarish] adding status bar settings assertion: <SBAppStatusBarSettingsAssertion: 0x600000a2b960> {' },
+  { timestamp: 1556722513537,
+    level: 'ALL',
+    message:
+     '    settings = <SBAppStatusBarSettings: 0x60000073ffc0; alpha: 0.000000; style: 0x0; legibilitySettings: 0x0; styleOverridesToCancel: 0>;' },
+  { timestamp: 1556722513537,
+    level: 'ALL',
+    message: '    level = app switcher;' },
+  { timestamp: 1556722513537,
+    level: 'ALL',
+    message: '    reason = App Switcher Visible;' },
+  { timestamp: 1556722513537, level: 'ALL', message: '}' },
+  { timestamp: 1556722513540,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.538 Df SpringBoard[52946:60885] [com.apple.SpringBoard:KeyWindow] Push: <SBMainSwitcherWindow: 0x7fed9e724040>' },
+  { timestamp: 1556722513540,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.538 Df SpringBoard[52946:60885] [com.apple.SpringBoard:KeyWindow] Evaluate: making new window key: <SBMainSwitcherWindow: 0x7fed9e724040>, for reason: push' },
+  { timestamp: 1556722513550,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.541 Df SpringBoard[52946:60885] [com.apple.FrontBoard.workspace:SceneDeactivation] Removed: <FBUIApplicationSceneDeactivationAssertion: 0x600000b474e0; reason: systemAnimation; all scene levels; hasPredicate: NO>' },
+  { timestamp: 1556722513633,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.593 Df SpringBoard[52946:60885] [com.apple.SpringBoard:Common] Application process state changed for com.apple.MobileSMS: <SBApplicationProcessState: 0x600000457e20; pid: 53155; taskState: Running; visibility: Unknown>' },
+  { timestamp: 1556722513633,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.595 Df SpringBoard[52946:6130e] [com.apple.Accessibility:TTY] -[RTTSettings objectValueForKey:andContext:withClass:andDefaultValue:]:452 Not retrieving setting. Context is wrong' },
+  { timestamp: 1556722513633,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.598 Df SpringBoard[52946:6130e] [com.apple.Accessibility:TTY] -[RTTSettings objectValueForKey:andContext:withClass:andDefaultValue:]:452 Not retrieving setting. Context is wrong' },
+  { timestamp: 1556722513659,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.658 Df sharingd[52950:61055] [com.apple.sharing:Daemon] SystemUI changed: 0x10 -> 0x0' },
+  { timestamp: 1556722513831,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.830 Df SpringBoard[52946:60885] [com.apple.FrontBoard.workspace:SceneDeactivation] Removed: <FBUIApplicationSceneDeactivationAssertion: 0x600000a41380; reason: systemAnimation; all scene levels; hasPredicate: NO>' },
+  { timestamp: 1556722513832,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:13.831 Df SpringBoard[52946:60885] [com.apple.FrontBoard.workspace:SceneDeactivation] [com.apple.MobileSMS] Setting deactivation reasons to: \'(none)\' for reason: updateAllScenesForBand - Assertion removed.' },
+  { timestamp: 1556722514246,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:14.246 Df locationd[52951:6087e] [com.apple.locationd.Position:GeneralCLX] @ClxSimulated, Fix, 1, ll, 37.7858340, -122.4064170, acc, 5.00, course, -1.0, time, 578415316.9' },
+  { timestamp: 1556722514247,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:14.246 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722514247,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:14.246 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722514247,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:14.246 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  { timestamp: 1556722514247,
+    level: 'ALL',
+    message:
+     '2019-05-01 21:55:14.246 A  locationd[52951:61104] CL: notifyClientsWithData (Fallback)' },
+  ... 1160 more items ]
+2019-05-01T14:55:20.820Z INFO webdriver: RESULT []
+2019-05-01T14:55:20.935Z DEBUG webdriver: request failed due to response error: unknown error
+2019-05-01T14:55:20.935Z WARN webdriver: Request failed due to An unknown server-side error occurred while processing the command. Original error: No logs of type 'performance' found.
+2019-05-01T14:55:20.935Z INFO webdriver: Retrying 1/3
+2019-05-01T14:55:20.935Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:20.935Z INFO webdriver: DATA { type: 'performance' }
+2019-05-01T14:55:20.944Z DEBUG webdriver: request failed due to response error: unknown error
+2019-05-01T14:55:20.945Z WARN webdriver: Request failed due to An unknown server-side error occurred while processing the command. Original error: Appium server must have relaxed security flag set in order to retrieve server logs
+2019-05-01T14:55:20.945Z INFO webdriver: Retrying 1/3
+2019-05-01T14:55:20.945Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:20.945Z INFO webdriver: DATA { type: 'server' }
+2019-05-01T14:55:20.966Z INFO webdriver: RESULT []
+2019-05-01T14:55:21.001Z INFO webdriver: RESULT []
+2019-05-01T14:55:21.042Z DEBUG webdriver: request failed due to response error: unknown error
+2019-05-01T14:55:21.042Z WARN webdriver: Request failed due to An unknown server-side error occurred while processing the command. Original error: No logs of type 'performance' found.
+2019-05-01T14:55:21.043Z INFO webdriver: Retrying 2/3
+2019-05-01T14:55:21.043Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:21.043Z INFO webdriver: DATA { type: 'performance' }
+2019-05-01T14:55:21.049Z DEBUG webdriver: request failed due to response error: unknown error
+2019-05-01T14:55:21.049Z WARN webdriver: Request failed due to An unknown server-side error occurred while processing the command. Original error: Appium server must have relaxed security flag set in order to retrieve server logs
+2019-05-01T14:55:21.049Z INFO webdriver: Retrying 2/3
+2019-05-01T14:55:21.049Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:21.049Z INFO webdriver: DATA { type: 'server' }
+2019-05-01T14:55:21.098Z DEBUG webdriver: request failed due to response error: unknown error
+2019-05-01T14:55:21.098Z WARN webdriver: Request failed due to An unknown server-side error occurred while processing the command. Original error: No logs of type 'performance' found.
+2019-05-01T14:55:21.098Z INFO webdriver: Retrying 3/3
+2019-05-01T14:55:21.098Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:21.098Z INFO webdriver: DATA { type: 'performance' }
+2019-05-01T14:55:21.101Z DEBUG webdriver: request failed due to response error: unknown error
+2019-05-01T14:55:21.101Z WARN webdriver: Request failed due to An unknown server-side error occurred while processing the command. Original error: Appium server must have relaxed security flag set in order to retrieve server logs
+2019-05-01T14:55:21.101Z INFO webdriver: Retrying 3/3
+2019-05-01T14:55:21.101Z INFO webdriver: [POST] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134/log
+2019-05-01T14:55:21.101Z INFO webdriver: DATA { type: 'server' }
+2019-05-01T14:55:21.142Z DEBUG webdriver: request failed due to response error: unknown error
+2019-05-01T14:55:21.143Z ERROR webdriver: Request failed due to unknown error: An unknown server-side error occurred while processing the command. Original error: No logs of type 'performance' found.
+    at getErrorFromResponseBody (/Users/k001310/webdriverIO/node_modules/webdriver/build/utils.js:348:10)
+    at Request._callback (/Users/k001310/webdriverIO/node_modules/webdriver/build/request.js:121:64)
+    at Request.self.callback (/Users/k001310/webdriverIO/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.<anonymous> (/Users/k001310/webdriverIO/node_modules/request/request.js:1161:10)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at IncomingMessage.<anonymous> (/Users/k001310/webdriverIO/node_modules/request/request.js:1083:12)
+    at Object.onceWrapper (events.js:277:13)
+2019-05-01T14:55:21.150Z WARN @wdio/runner: Couldn't fetch logs for performance: An unknown server-side error occurred while processing the command. Original error: No logs of type 'performance' found.
+2019-05-01T14:55:21.152Z DEBUG webdriver: request failed due to response error: unknown error
+2019-05-01T14:55:21.152Z ERROR webdriver: Request failed due to unknown error: An unknown server-side error occurred while processing the command. Original error: Appium server must have relaxed security flag set in order to retrieve server logs
+    at getErrorFromResponseBody (/Users/k001310/webdriverIO/node_modules/webdriver/build/utils.js:348:10)
+    at Request._callback (/Users/k001310/webdriverIO/node_modules/webdriver/build/request.js:121:64)
+    at Request.self.callback (/Users/k001310/webdriverIO/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.<anonymous> (/Users/k001310/webdriverIO/node_modules/request/request.js:1161:10)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at IncomingMessage.<anonymous> (/Users/k001310/webdriverIO/node_modules/request/request.js:1083:12)
+    at Object.onceWrapper (events.js:277:13)
+2019-05-01T14:55:21.153Z WARN @wdio/runner: Couldn't fetch logs for server: An unknown server-side error occurred while processing the command. Original error: Appium server must have relaxed security flag set in order to retrieve server logs
+2019-05-01T14:55:21.154Z INFO webdriver: COMMAND deleteSession()
+2019-05-01T14:55:21.154Z INFO webdriver: [DELETE] http://127.0.0.1:4444/wd/hub/session/64a953d9-aaeb-49be-9577-676029534134

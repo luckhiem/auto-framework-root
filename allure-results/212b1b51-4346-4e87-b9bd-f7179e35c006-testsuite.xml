@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571712883355' stop='1571712883906'>
+    <name>Get Skiing</name>
+    <title>Get Skiing</title>
+    <test-cases>
+        <test-case start='1571712883355' status='broken' stop='1571712883904'>
+            <name>Get Skiing</name>
+            <title>Get Skiing</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;li>...&lt;/li> is not clickable at point (275, 191). Other element would receive the click: &lt;a href="#" data-target="resorts-3" data-id="3" data-type="d" data-text="Italy" data-depth="1">...&lt;/a>
+                  (Session info: chrome=77.0.3865.120)</message>
+                <stack-trace>element click intercepted: Element &lt;li>...&lt;/li> is not clickable at point (275, 191). Other element would receive the click: &lt;a href="#" data-target="resorts-3" data-id="3" data-type="d" data-text="Italy" data-depth="1">...&lt;/a>
+                  (Session info: chrome=77.0.3865.120)
+                    at Homepage.click [as selectResort] (/Users/k001310/Documents/hae-automation/auto-framework/src/pageObjects/web/Homepage.js:28:42)
+                    at Context.selectResort (/Users/k001310/Documents/hae-automation/auto-framework/src/testScripts/web/homepage_test.js:13:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
