@@ -1,4 +1,4 @@
-# auto-framework-
+# auto-framework-root
 This repository is used for executing automation test
 
 ## Version
