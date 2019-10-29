@@ -1,6 +1,6 @@
 name: triggerEvent
 
-on: [push, pull_request]
+on: [repository_dispatch]
 
 jobs:
   build:
@@ -20,9 +20,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: post github event 
-      run: |
-        curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json"  -H "Content-Type: application/json" https://api.github.com/repos/luckhiem/auto-framework-root/dispatches --data '{"event_type": "push"}'
     - name: install chrome
       run: |
         sudo apt-get update 
