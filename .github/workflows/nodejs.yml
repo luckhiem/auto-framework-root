@@ -1,4 +1,4 @@
-name: triggerEvent
+name: TestCI
 
 on: [repository_dispatch]
 
