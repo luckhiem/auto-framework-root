@@ -1,4 +1,4 @@
-name: triggerEvent
+name: MasterCI
 
 on: [push, pull_request]
 
