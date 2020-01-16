@@ -1,0 +1,28 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: post github event
+      if: success() 
+      run: |
+        curl -H "Accept: application/vnd.github.everest-preview+json" -H "Authorization: token ${{secrets.PAT_TOKEN}}"  --request POST https://api.github.com/repos/SDQA-VN/ui-component-auto/dispatches --data '{"event_type": "do-something"}'
+    - name: do something
+      run: 
+         echo 'test'    
+      env:
+        CI: true
