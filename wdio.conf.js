@@ -16,7 +16,7 @@ exports.config = {
         //     args: ['--headless', '--disable-gpu'],
         // }
     }],
-    logLevel: 'trace',
+    logLevel: 'silent',
     bail: 0,
     baseUrl: 'http://localhost',
     waitforTimeout: 10000,

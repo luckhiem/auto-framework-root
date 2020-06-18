@@ -6,7 +6,7 @@ const Faker = require('faker');
 const usersData = {
     firstName: Faker.name.firstName(),
     lastName: Faker.name.lastName(),
-    manager: 'Admin'
+    manager: 'Alexa Admin'
 }
 
 const config = function () {
@@ -18,7 +18,7 @@ const config = function () {
         },
         user: {
             admin: new User({email: ENV.adminstrator.username, password: ENV.adminstrator.password}),
-            normalUser: Utils.generateUsers(7, usersData)
+            normalUser: Utils.generateUsers(5, usersData)
         }
     };
 };

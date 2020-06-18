@@ -1,13 +1,12 @@
 const PageFactory = require('../pages/PageFactory');
-const CONFIG = require('../config')
+const CONFIG = require('../config');
 
-let page = PageFactory
-
+let page = PageFactory;
 
 describe('Adding People', () => {
 
   before(function () {
-    page.Login.open().doLogin(CONFIG.user.admin)
+    page.Login.open().doLogin(CONFIG.user.admin);
   });
 
   it('Adding People', () => {

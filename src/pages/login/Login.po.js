@@ -5,19 +5,19 @@ const BrowserHandler = require('../../common/BrowserHandler.js');
 const EMAIL_TXB = '#session_email';
 const PASSWORD_TXB = '#session_password';
 const LOGIN_BTN = "//button[text()='Sign In']";
-const INDEX_PAGE_TITLE = "TINYpulse | Engage"
+const INDEX_PAGE_TITLE = "TINYpulse | Engage";
 
 class LoginPage {
     open() {
         BrowserHandler.maximizeWindow();
         BrowserHandler.navigate(CONFIG.PATH.LOGIN_URL);
-        ElementHandler.verifyURL(CONFIG.PATH.LOGIN_URL)
+        ElementHandler.verifyURL(CONFIG.PATH.LOGIN_URL);
         return this;
     }
 
     verifyPageAfterLogin() {
-        ElementHandler.verifyURL(CONFIG.PATH.INDEX_URL)
-        ElementHandler.verifyTitle(INDEX_PAGE_TITLE)
+        ElementHandler.verifyURL(CONFIG.PATH.INDEX_URL);
+        ElementHandler.verifyTitle(INDEX_PAGE_TITLE);
     }
 
     /**
@@ -25,10 +25,10 @@ class LoginPage {
      * @param {User} user
      */
     doLogin(user) {
-        ElementHandler.addValue(EMAIL_TXB, user.email)
-        ElementHandler.addValue(PASSWORD_TXB, user.password)
-        ElementHandler.click(LOGIN_BTN)
-        this.verifyPageAfterLogin()
+        ElementHandler.addValue(EMAIL_TXB, user.email);
+        ElementHandler.addValue(PASSWORD_TXB, user.password);
+        ElementHandler.click(LOGIN_BTN);
+        this.verifyPageAfterLogin();
         return this;
     }
 }

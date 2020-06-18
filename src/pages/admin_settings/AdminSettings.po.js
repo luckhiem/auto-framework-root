@@ -1,21 +1,13 @@
 const ElementHandler = require('../../common/ElementHandler');
 
 const ICON_SETTINGS = '.icon-people-setting';
+const PAGE_INDEX = '#content-container';
 
 class AdminSettings {
     openPage() {
         ElementHandler.click(ICON_SETTINGS);
-        browser.pause(5000)
-        return this;
-    }
-
-    /**
-    * @param {string} itemName    engage item name
-    */
-    accessToEngageItem(itemName) {
-        browser.pause(5000)
-        const ITEM_NAME_LOCATOR = `//div[text()='${itemName}']`;
-        ElementHandler.click(ITEM_NAME_LOCATOR);
+        ElementHandler.waitForElement(PAGE_INDEX);
+        ElementHandler.verifyElementExisting(PAGE_INDEX);
         return this;
     }
 }
