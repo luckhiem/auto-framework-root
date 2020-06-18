@@ -28,13 +28,15 @@ The framework base on WebdriverIO & Mocha
 ├── resource                         // folder contains data for framework (json, excel, csv, png ...)        
 ├── src
 │   ├── common                       // folder includes common funcions/ultilities that can used in all project
-│   ├── config.json
-│   ├── pageObjects
-│   │   ├── mobile                   // folder contains page object for using automate web
-│   │   └── web                      // folder contains page object for using automate mobile app
-│   └── testScripts 
-│       ├── mobile                   // folder includes test script for web automation
-│       └── web                      // folder includes test script for mobile automation mobile app
-├── wdio.conf.mobile.js              // config file to execute test in mobile
-└── wdio.conf.web.js                 // config file to execute test in web
+│   ├── enity                        // folder includes file define entity model project
+│   ├── pages
+│   │   ├── admin_settings           // folder contains page object for using automate admin setting page
+│   │   ├── login                    // folder contains page object for using automate admin setting page
+│   │   └── PageFactory.js           // file contains all page object for using automate
+│   |── test_scripts                 // folder includes test script for web automation
+│   |── utils                        // folder includes common funcions/ultilities that can used in all project
+│   |── config.js                    // file includes all config that can used in the project
+│   |── environment.json             // file includes the information to using for this project (domain, admin...)
+│── package.json                     // file to manage all dependencies to using in this project
+│── wdio.conf.js                     // config file to execute test in web
 ```
