@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Adding People",
+    "children" : [ {
+      "name" : "\"before all\" hook",
+      "uid" : "43dfde096beac440",
+      "parentUid" : "da73747a2661fcfbf9994e550a3ce5c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592475445664,
+        "stop" : 1592475472178,
+        "duration" : 26514
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-83.0.4103.97" ]
+    }, {
+      "name" : "Adding People",
+      "uid" : "619bb2faf0a368d0",
+      "parentUid" : "da73747a2661fcfbf9994e550a3ce5c9",
+      "status" : "broken",
+      "time" : {
+        "start" : 1592475472178,
+        "stop" : 1592475503446,
+        "duration" : 31268
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-83.0.4103.97" ]
+    } ],
+    "uid" : "da73747a2661fcfbf9994e550a3ce5c9"
+  } ]
+}

@@ -1,4 +1,4 @@
-export class User {
+class User {
     /**
      * @param {string} email
      * @param {string} password
@@ -7,13 +7,12 @@ export class User {
      * @param {string} manager
      * @return {User}
      */
-    constructor(
-        email,
+    constructor({ email,
         password,
         firstName,
         lastName,
         manager,
-    ) {
+    } = {}) {
         this.email = email;
         this.password = password;
         this.firstName = firstName;
@@ -21,3 +20,5 @@ export class User {
         this.manager = manager;
     }
 }
+
+module.exports = User;

@@ -1,5 +1,5 @@
 # auto-framework-root
-This repository is used for executing automation test test
+This repository is used for executing automation test
 
 ## Version
 1.0.0
@@ -14,19 +14,8 @@ $ npm install
 ```
 ## Run Test
 * Run web automation test
-  * Step 1: Double click on chromedriver to start server
-  * Step 2: Run comand below 
     ```
-    $ npm run test-web
-    ```
-* Run mobile automation test
-  * Step 1: Start server appium
-    ```
-    $ appium -p 4444
-    ```
-  * Step 2: Run comand below 
-    ```
-    $ npm run test-mobile
+    $ npm run test
     ```
 ## Report
 After executing test, run comand to generate html report

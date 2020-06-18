@@ -93,9 +93,9 @@ class PeopleAdd {
             const manager = ElementHandler.getText(MANAGER_CELL_VALUE);
 
             const info = {
+                email: email,
                 firstName: firstName,
                 lastName: lastName,
-                email: email,
                 manager: manager
             }
 
@@ -110,7 +110,7 @@ class PeopleAdd {
     verifyPeopleInfoAfterPeopleAdded(user) {
         let overviewValue;
         if (user.length === 1) {
-            overviewValue = `${user.length} employee have been added to TINYpulse`
+            overviewValue = `${user.length} employee has been added to TINYpulse`
         } else {
             overviewValue = `${user.length} employees have been added to TINYpulse`
         }

@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Can't call getText on element with selector \".items-center.green\" because element wasn't found",
+      "children" : [ {
+        "name" : "Adding People",
+        "uid" : "619bb2faf0a368d0",
+        "parentUid" : "b3d2e6f5e10b52ad5980f2ad2948790f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1592475472178,
+          "stop" : 1592475503446,
+          "duration" : 31268
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-83.0.4103.97" ]
+      } ],
+      "uid" : "b3d2e6f5e10b52ad5980f2ad2948790f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
