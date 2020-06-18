@@ -1,10 +1,11 @@
 const ENV = require('./environment.json');
 const User = require('./entity/User.js');
-const Utils = require('./utils/Utils')
+const Utils = require('./utils/Utils');
+const Faker = require('faker');
 
 const usersData = {
-    firstName: "mark",
-    lastName: "levinson",
+    firstName: Faker.name.firstName(),
+    lastName: Faker.name.lastName(),
     manager: 'Khiem Luc'
 }
 

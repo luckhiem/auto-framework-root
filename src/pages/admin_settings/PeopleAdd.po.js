@@ -9,9 +9,9 @@ const ADD_PEOPLE_BTN = '.cucumber-send-invite-button';
 const PAGE_INDEX = '#content-container';
 const MANAGER_DDL = '.new-custom-select';
 const SEARCH_MANAGER_TXB = 'input[placeholder="Search..."]';
-const MANAGER_ITEM = '.select-email-item';
 const ADD_MORE_BTN = '.js-cucumber-add-more';
-const STATUS_LBL = ".items-center.green";
+const SUCCESS_STATUS_LBL = ".items-center.green";
+const ERROR_STATUS_LBL = ".items-center.red";
 const OVERVIEW_LBL = ".overflow-auto div";
 
 class PeopleAdd {
@@ -127,9 +127,19 @@ class PeopleAdd {
     */
     verifyPageAfterPeopleAdded(user) {
         const STATUS_VALUE = "check_circle\nCongratulations";
-        ElementHandler.verifyText(STATUS_LBL, STATUS_VALUE);
+        ElementHandler.verifyText(SUCCESS_STATUS_LBL, STATUS_VALUE);
         this.verifyPeopleInfoAfterPeopleAdded(user);
         this.getPeopleInfoAfterPeopleAdded()
+        return this
+    }
+
+
+    /**
+    * @param {User} user
+    */
+    verifyErrorMessageAfterPeopleAdded(user) {
+        const ERROR_MESSAGE = "error\nUh oh! Unable to add user because email already exists";
+        ElementHandler.verifyText(ERROR_STATUS_LBL, ERROR_MESSAGE);
         return this
     }
 }

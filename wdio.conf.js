@@ -8,7 +8,7 @@ exports.config = {
     exclude: [],
     maxInstances: 10,
     capabilities: [{
-        maxInstances: 5,
+        maxInstances: 1,
         browserName: 'chrome',
         // 'goog:chromeOptions': {
         //     // to run chrome headless the following flags are required

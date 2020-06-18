@@ -25,8 +25,6 @@ $ npm run generate-reports
 # Framework structure
 The framework base on WebdriverIO & Mocha
 ```
-├── allure-reports                   // folder contains report after generating from json to html format
-├── results
 ├── resource                         // folder contains data for framework (json, excel, csv, png ...)        
 ├── src
 │   ├── common                       // folder includes common funcions/ultilities that can used in all project

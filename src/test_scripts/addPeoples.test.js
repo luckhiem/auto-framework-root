@@ -5,7 +5,7 @@ let page = PageFactory
 
 
 describe('Adding People', () => {
-  
+
   before(function () {
     page.Login.open().doLogin(CONFIG.user.admin)
   });
@@ -15,5 +15,12 @@ describe('Adding People', () => {
       .acccessToAddPeoplePage()
       .addNewPeoples(CONFIG.user.normalUser)
       .verifyPageAfterPeopleAdded(CONFIG.user.normalUser)
+  });
+
+  it('Adding People unsuccessfully', () => {
+    page.PeopleAdd
+      .acccessToAddPeoplePage()
+      .addNewPeoples(CONFIG.user.normalUser)
+      .verifyErrorMessageAfterPeopleAdded(CONFIG.user.normalUser)
   });
 });
