@@ -1,4 +1,4 @@
-# auto-framework-root
+# tinypulse-auto-framework
 This repository is used for executing automation test
 
 ## Version
@@ -8,7 +8,7 @@ This repository is used for executing automation test
 ```
 $ mkdir auto-test
 $ cd auto-test
-$ git clone https://github.com/luckhiem/auto-framework.git
+$ git clone https://github.com/luckhiem/tinypulse-auto-framework.git
 $ cd auto-framework
 $ npm install
 ```
