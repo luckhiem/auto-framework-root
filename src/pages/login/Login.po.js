@@ -9,7 +9,7 @@ const INDEX_PAGE_TITLE = "TINYpulse | Engage"
 
 class LoginPage {
     open() {
-        BrowserHandler.maximizeWindow();
+        // BrowserHandler.maximizeWindow();
         BrowserHandler.navigate(CONFIG.PATH.LOGIN_URL);
         ElementHandler.verifyURL(CONFIG.PATH.LOGIN_URL)
         return this;

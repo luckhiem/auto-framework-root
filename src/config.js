@@ -6,7 +6,7 @@ const Faker = require('faker');
 const usersData = {
     firstName: Faker.name.firstName(),
     lastName: Faker.name.lastName(),
-    manager: 'Khiem Luc'
+    manager: 'Admin'
 }
 
 const config = function () {
