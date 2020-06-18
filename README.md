@@ -16,11 +16,16 @@ $ git clone https://github.com/luckhiem/tinypulse-auto-framework.git
 $ cd tinypulse-auto-framework
 $ npm install
 ```
+
 ## Run Test
-Run web automation test
+1. At ./src/environment.json
+```
+Config domain, admin username, admin password
+```
+2. Run web automation test
 ```
 $ npm run test
- ```
+```
 ## Report
 After executing test, run comand to generate html report
 ```
