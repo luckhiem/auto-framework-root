@@ -4,6 +4,10 @@ This repository is used for executing automation test
 ## Version
 1.0.0
 
+## Enviroment
+* NodeJS: v12.17.0
+* NPM: 6.14.5
+
 ## Setup
 ```
 $ mkdir auto-test
