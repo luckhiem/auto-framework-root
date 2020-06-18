@@ -1,16 +1,18 @@
 export class User {
     /**
      *
-     * @param {string} displayName
-     * @param {string} nickName
-     * @param {string} loginName
-     * @param {string} sortKey
-     * @param {string} emailAddress
-     * @param {string} password
+     * @param {string} firstName
+     * @param {string} lastName
+     * @param {string} email
+     * @param {string} startDate
+     * @param {string} manager
+     * @param {string} segment
+     * @param {string} manager
+     * @param {string} segment
      * @return {User}
      */
     constructor(
-        displayName,
+        firstName,
         nickName,
         loginName,
         sortKey,

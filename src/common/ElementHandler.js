@@ -1,11 +1,29 @@
 const expect = require('chai').expect;
 
+const TIMEOUT = 30000;
+
 class ElementHandler {
     /**
     * @param {string} locator    Element for wait
     */
     waitForElement(locator) {
-        $(locator).waitForExist(30000, false);
+        $(locator).waitForExist({ timeout: TIMEOUT, reverse: false });
+        return this;
+    }
+
+    /**
+    * @param {string} locator    Element for wait
+    */
+    waitForElementDisplayed(locator) {
+        $(locator).waitForDisplayed({ timeout: TIMEOUT, reverse: false });
+        return this;
+    }
+
+    /**
+    * @param {string} locator    Element for verify
+    */
+    waitForElementClickable(locator) {
+        $(locator).waitForClickable({ timeout: TIMEOUT });
         return this;
     }
 
@@ -104,7 +122,7 @@ class ElementHandler {
     verifyURL(url) {
         browser.waitUntil(() => {
             return browser.getUrl() === url;
-        }, 30000, `${url} is not correct`);
+        }, TIMEOUT, `${url} is not correct`);
         return this;
     }
 
@@ -125,14 +143,6 @@ class ElementHandler {
     addValue(locator, value) {
         this.waitForElement(locator);
         $(locator).addValue(value);
-        return this;
-    }
-
-    /**
-    * @param {string} locator    Element for verify
-    */
-    waitForElementClickable(locator) {
-        $(locator).waitForClickable({ timeout: 300000 });
         return this;
     }
 
