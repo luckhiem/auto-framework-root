@@ -13,10 +13,10 @@ $ cd auto-framework
 $ npm install
 ```
 ## Run Test
-* Run web automation test
-    ```
-    $ npm run test
-    ```
+Run web automation test
+```
+$ npm run test
+ ```
 ## Report
 After executing test, run comand to generate html report
 ```
