@@ -114,11 +114,9 @@ class PeopleAdd {
         } else {
             overviewValue = `${user.length} employees have been added to TINYpulse`
         }
-        ElementHandler.verifyText(OVERVIEW_LBL, overviewValue)
-        const peopleInfo = this.getPeopleInfoAfterPeopleAdded()
-        console.log(peopleInfo);
-        console.log(user)
-        expect(JSON.stringify(user)).to.include(JSON.stringify(peopleInfo))
+        ElementHandler.verifyText(OVERVIEW_LBL, overviewValue);
+        const peopleInfo = this.getPeopleInfoAfterPeopleAdded();
+        expect(JSON.stringify(user)).to.include(JSON.stringify(peopleInfo));
         return this
     }
 
