@@ -13,7 +13,7 @@ This repository is used for executing automation test
 $ mkdir auto-test
 $ cd auto-test
 $ git clone https://github.com/luckhiem/tinypulse-auto-framework.git
-$ cd auto-framework
+$ cd tinypulse-auto-framework
 $ npm install
 ```
 ## Run Test
