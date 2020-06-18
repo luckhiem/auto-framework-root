@@ -44,12 +44,12 @@ class PeopleAdd {
      * @param {string} manager //manager displayed name
      */
     _selectManager(index, manager) {
-        const MANAGER_ITEM_VALUE = `//h4[text()='${manager}']//ancestor::div//div[@class='select-email-item']`
-        ElementHandler.click(`tr:nth-child(${index}) ` + MANAGER_DDL)
+        const MANAGER_ITEM_VALUE = `//h4[text()='${manager}']//ancestor::div//div[@class='select-email-item']/parent::div`
+        ElementHandler.click(`tr:nth-child(${index}) ` + MANAGER_DDL);
         ElementHandler.addValue(SEARCH_MANAGER_TXB, manager);
-        ElementHandler.waitForElement(MANAGER_ITEM_VALUE)
-        ElementHandler.waitForElementDisplayed(MANAGER_ITEM_VALUE)
-        ElementHandler.click(MANAGER_ITEM_VALUE)
+        ElementHandler.waitForElementDisplayed(MANAGER_ITEM_VALUE);
+        ElementHandler.verifyElementDisplayed(MANAGER_ITEM_VALUE)
+        ElementHandler.click(MANAGER_ITEM_VALUE);
         return this;
     }
 
