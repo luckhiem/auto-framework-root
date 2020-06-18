@@ -6,7 +6,7 @@ This repository is used for executing automation test
 
 ## Enviroment
 * NodeJS: v12.17.0
-* NPM: 6.14.5
+* NPM: v6.14.5
 
 ## Setup
 ```
