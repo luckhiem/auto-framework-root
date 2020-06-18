@@ -8,6 +8,9 @@ const constant = function () {
             BASE_URL: `https://${CONFIG.domain}/`,
             LOGIN_URL: `https://${CONFIG.domain}/signin`,
             INDEX_URL: `https://${CONFIG.domain}/engage#insights/overview`,
+        },
+        user: {
+            admin: `https://${CONFIG.domain}/`,
         }
     };
 };
