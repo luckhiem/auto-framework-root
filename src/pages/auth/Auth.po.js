@@ -7,7 +7,7 @@ const PASSWORD_TXB = '#session_password';
 const LOGIN_BTN = "//button[text()='Sign In']";
 const INDEX_PAGE_TITLE = "TINYpulse | Engage";
 
-class LoginPage {
+class AuthPage {
     open() {
         BrowserHandler.maximizeWindow();
         BrowserHandler.navigate(CONFIG.PATH.LOGIN_URL);
@@ -31,6 +31,12 @@ class LoginPage {
         this.verifyPageAfterLogin();
         return this;
     }
+
+    doLogout() {
+        BrowserHandler.navigate(CONFIG.PATH.LOGOUT_URL);
+        ElementHandler.verifyURL(CONFIG.PATH.LOGIN_URL);
+        return this;
+    }
 }
 
-module.exports = new LoginPage();
+module.exports = new AuthPage();

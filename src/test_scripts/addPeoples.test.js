@@ -6,7 +6,11 @@ let page = PageFactory;
 describe('Adding People', () => {
 
   before(function () {
-    page.Login.open().doLogin(CONFIG.user.admin);
+    page.Auth.open().doLogin(CONFIG.user.admin);
+  });
+
+  after(function () {
+    page.Auth.doLogout()
   });
 
   it('Adding People', () => {

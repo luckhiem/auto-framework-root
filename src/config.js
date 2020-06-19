@@ -14,6 +14,7 @@ const config = function () {
         PATH: {
             BASE_URL: `https://${ENV.domain}/`,
             LOGIN_URL: `https://${ENV.domain}/signin`,
+            LOGOUT_URL: `https://${ENV.domain}/signout`,
             INDEX_URL: `https://${ENV.domain}/engage#insights/overview`,
         },
         user: {

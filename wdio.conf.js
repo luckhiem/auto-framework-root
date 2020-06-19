@@ -19,7 +19,7 @@ exports.config = {
     logLevel: 'silent',
     bail: 0,
     baseUrl: 'http://localhost',
-    waitforTimeout: 10000,
+    waitforTimeout: 30000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
     framework: 'mocha',
