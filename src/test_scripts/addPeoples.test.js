@@ -23,7 +23,10 @@ describe('Adding People', () => {
   it('Adding People unsuccessfully', () => {
     page.PeopleAdd
       .acccessToAddPeoplePage()
-      .addNewPeoples(CONFIG.user.normalUser)
-      .verifyErrorMessageAfterPeopleAdded(CONFIG.user.normalUser)
+      .addNewPeoples(CONFIG.user.normalUser1)
+      .verifyPageAfterPeopleAdded(CONFIG.user.normalUser1)
+      .acccessToAddPeoplePage()
+      .addNewPeoples(CONFIG.user.normalUser1)
+      .verifyErrorMessageAfterPeopleAdded()
   });
 });

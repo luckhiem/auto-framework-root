@@ -9,6 +9,12 @@ const usersData = {
     manager: 'Alexa Admin'
 }
 
+const usersData1 = {
+    firstName: Faker.name.firstName(),
+    lastName: Faker.name.firstName(),
+    manager: 'Alexa Admin'
+}
+
 const config = function () {
     return {
         PATH: {
@@ -18,8 +24,9 @@ const config = function () {
             INDEX_URL: `https://${ENV.domain}/engage#insights/overview`,
         },
         user: {
-            admin: new User({email: ENV.adminstrator.username, password: ENV.adminstrator.password}),
-            normalUser: Utils.generateUsers(5, usersData)
+            admin: new User({ email: ENV.adminstrator.username, password: ENV.adminstrator.password }),
+            normalUser: Utils.generateUsers(5, usersData),
+            normalUser1: Utils.generateUsers(2, usersData1),
         }
     };
 };

@@ -131,11 +131,7 @@ class PeopleAdd {
         return this
     }
 
-
-    /**
-    * @param {User} user
-    */
-    verifyErrorMessageAfterPeopleAdded(user) {
+    verifyErrorMessageAfterPeopleAdded() {
         const ERROR_MESSAGE = "error\nUh oh! Unable to add user because email already exists";
         ElementHandler.verifyText(ERROR_STATUS_LBL, ERROR_MESSAGE);
         return this
